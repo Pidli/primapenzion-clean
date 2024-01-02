@@ -1,0 +1,208 @@
+body {
+    background: lemonchiffon;
+    font-family: 'Montserrat', sans-serif;
+}
+input, textarea {
+    font-family: 'Montserrat', sans-serif;
+}
+/*Lze nastavit CSS pro libovolný počet prvků stránky např pro tagy: "p, h2, ul, li, ol {....}", ale pokud chceme nastavit pro všechny prvky stránky, stačí CSS nastavit pro "*", viz níže...*/
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+/*Barva odkazů bude nabíhat pozvolně (0.5s), viz níže...*/
+a, i, input {
+    transition: 0.5s;
+}
+h1 {
+    font-size: 50px;
+    padding: 50px 0 80px;
+    text-transform: uppercase;
+    text-align: center;
+}
+p {
+    line-height: 1.6;
+}
+/*Vypneme defaultní odsazení obrázků na stránkách, viz níže...*/
+img, iframe {
+    vertical-align: top;
+}
+/*Vytvoření tzv. třídy CSS s názvem container, viz níže... (ve stránce HTML tomu odpovídá class="container"), ale bude platit jen v rámci tagu header, viz níže...*/
+.container {
+    width: 75%;
+    margin: auto;
+}
+header .container {
+    width: 85%;
+    text-align: center;
+}
+.headerTop {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+.tel:hover {
+    color: #b30000;
+    text-decoration: underline;
+}
+.fa-facebook:hover {
+    color: #1877F2
+}
+.fa-twitter:hover {
+    color: #1DA1F2
+}
+.fa-x-twitter:hover {
+    color: #1DA1F2
+}
+.fa-instagram:hover {
+    color: #E4405F
+}
+.soc {
+    font-size: 22px;
+}
+.logo {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+.menu ul {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    justify-content: center;
+    gap: 80px;
+    padding: 40px 0;
+}
+/*Níže může jen pro formátování odkazů v menu stejně fungovat jen ".menu a", ale lze i vypsat celou "kaskádu" postupně, viz níže...*/
+.menu ul li a {
+padding-bottom: 10px;
+}
+.menu ul li a:hover {
+    border-bottom: 3px solid #b30000;
+}   
+header img {
+    width: 100%;
+    height: auto;
+}
+/*section*/
+.obsah {
+    text-align: center;
+    padding-bottom: 130px;
+}
+.obsah h2 {
+    color: #a57a5b;
+    padding-bottom: 35px;
+}
+/*footer*/
+footer {
+    background: lightgray;
+    text-align: center;
+}
+footer .logo {
+    font-size: 20px;
+}
+footer .soc {
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+.footerInfo {
+    padding: 30px;
+}
+.footerInfo p i, 
+.kontaktFlex p i {
+    margin-right: 20px;
+}
+.footerInfo p b,
+.kontaktFlex p b {
+    color: #b30000;
+}
+.copy {
+    background: lemonchiffon;
+    padding: 15px 0;
+    font-size: 14px;
+}
+/*kontakt*/
+.kontakt {
+    padding: 100px 0;
+    text-align: center;
+}
+.greyBox {
+    background: lightgray;
+    padding: 0 30px 30px;
+}
+.kontaktFlex {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding-bottom: 50px;
+}
+.karty i  {
+    font-size: 50px;
+    margin: 0.5px;
+}
+.kontakt iframe {
+    width: 100%;
+    margin: 10px 0;
+}
+.greyBox {
+    padding: 0 30px 30px;
+}
+.greyBox h2 {
+    padding: 30px 0;
+}
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+    display: block;
+    width: 70%;
+    padding: 10px;
+    margin: 0 auto 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #a8a8a8;
+    color: #8d8d8d;
+}
+textarea {
+    height: 130px;
+}
+input[type="submit"] {
+    border: 2px solid #b30000;
+    border-radius: 5px;
+    padding: 10px 25px;
+    color: #b30000;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    background: transparent;
+}
+input[type="submit"]:hover {
+    background: #b30000;
+    color: #fff;
+    cursor: pointer;
+}
+/*Galerie*/
+.foto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3px;
+}
+.foto a {
+    width: 24%;
+}
+.foto img {
+    width: 100%;
+    height: auto;
+}
+
